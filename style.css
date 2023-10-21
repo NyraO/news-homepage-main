@@ -1,0 +1,14 @@
+nav{
+    display:grid;
+    grid-template-columns: 50% repeat(5,1fr);
+
+}
+footer{
+    display:grid;
+    grid-gap:50px;
+    grid-template-columns: repeat(3,1fr);
+}
+footer>div{
+    display:flex;
+    flex-direction: column;
+}
