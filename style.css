@@ -13,6 +13,9 @@ nav>a{
     margin: 10px 0px 0px 0px;
     padding:0px;
 }
+#banner-img{
+    width:740px;
+}
 h1{
     font-weight: 900;
     font-size: 48px;
@@ -20,9 +23,23 @@ h1{
 }
 main{
     display:grid;
-    column-gap:120px;
+    column-gap:150px;
     row-gap: 15px;
     grid-template-columns: 250px 350px;
+}
+.read-more{
+    padding:10px 53px;
+    background-color: hsl(5, 85%, 63%);
+    color:white;
+    font-weight: bold;
+    font-size: small;
+}
+.read-more:hover{
+    background-color: hsl(240, 100%, 5%);
+}
+main>div>p{
+    color:hsl(236, 13%, 42%);
+    margin-bottom: 30px;
 }
 aside{
     background-color: hsl(240, 100%, 5%);
@@ -61,35 +78,42 @@ footer{
     grid-template-columns: 740px 320px; 
     grid-template-rows: auto auto;
 }
+footer{
+    display:grid;
+    grid-gap:59.5px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 footer>div{
-    display:flex;
-    flex-direction: column;
+    display:grid;
+    grid-gap:30px;
+    grid-template-columns: 110px 1fr;
 }
 footer>div>img{
     width:110px;
 }
-#banner-img{
-    width:740px;
+.link{
+    font-weight: 700;
+    color: hsl(240, 100%, 5%);
 }
-
-.read-more{
-    padding:10px 53px;
-    background-color: hsl(5, 85%, 63%);
-    color:white;
-    font-weight: bold;
+.link:hover{
+    color: hsl(5, 85%, 63%);
+}
+h3{
+    font-size: 30px;
+    font-weight: 900;
+    color:hsl(233, 8%, 79%);
+}
+.desc{
+    color:hsl(236, 13%, 42%);
     font-size: small;
-}
-.read-more:hover{
-    background-color: hsl(240, 100%, 5%);
 }
 p{
     font-size: 15px;
 }
-main>div>p{
-    color:hsl(236, 13%, 42%);
-    margin-bottom: 30px;
-}
 a{
     text-decoration: none;
     color:hsl(236, 13%, 42%);
+}
+.attribution{
+    display:none;
 }
